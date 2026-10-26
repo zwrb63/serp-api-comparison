@@ -28,7 +28,7 @@ A SERP API handles all of that for you — IP rotation across millions of proxie
 
 ---
 
-## The 10 Best SERP APIs Compared at a Glance
+## The 11 Best SERP APIs Compared at a Glance
 
 Before getting into the details, here's how the current landscape stacks up. Pricing is cost per 1,000 Google SERP requests at standard settings:
 
@@ -44,6 +44,7 @@ Before getting into the details, here's how the current landscape stacks up. Pri
 | **Scrapingdog** | Budget all-rounder with fast responses | $40/mo | $0.29–$1 | 1,000 credits | Subscription |
 | **Decodo** | Affordable Google + Bing on great proxies | $19/mo | ~$0.50–$0.95 | $1/14-day refund | Subscription |
 | **Scrape Creators** | Cheap Google + social data, no subscription | PAYG | $0.99–$1.88 | 100 credits | Pay-as-you-go |
+| **[Firecrawl](https://www.firecrawl.dev/?utm_source=zwrb63-serp-api-comparison&utm_medium=integration)** | Search plus page content in one call for AI agents | Free, then $19/mo | About $1.50 to $7.60 per 1K searches within plan credits | 1,000 credits/month, no card | Subscription + PAYG top-ups |
 
 ---
 
@@ -209,6 +210,8 @@ Here's where each provider actually wins:
 
 **Decodo** ($19/mo) — Lowest entry price in the category, backed by excellent proxy infrastructure (formerly Smartproxy). Supports AI Overview templates and multiple output formats (JSON, Markdown, HTML, PNG). No pay-as-you-go, so plan carefully.
 
+**[Firecrawl](https://www.firecrawl.dev/?utm_source=zwrb63-serp-api-comparison&utm_medium=integration)** ($19/mo Hobby, about $1.50 to $7.60 per 1K searches within plan credits): One call to its [`/search` endpoint](https://docs.firecrawl.dev/features/search?utm_source=zwrb63-serp-api-comparison&utm_medium=integration) returns web results, plus news and images via `sources`, and with `scrapeOptions` adds each page's content as markdown where the page can be scraped. Limits: no structured SERP features like People Also Ask or shopping carousels, and it isn't a multi-engine SERP product. Best for: AI agents and RAG pipelines that want results and page content in one call.
+
 ---
 
 ## ScraperAPI's Structured Data Endpoints: A Closer Look
@@ -262,6 +265,7 @@ Still not sure which is the right call? Here's a clean breakdown:
 |---|---|
 | You need Google + other engines (Bing, Baidu, Yandex) | SerpApi or DataForSEO |
 | You're building an AI agent that needs fast Google results | Serper |
+| You're building an AI agent that needs search results plus page content in one call | [Firecrawl](https://www.firecrawl.dev/?utm_source=zwrb63-serp-api-comparison&utm_medium=integration) |
 | You need bulk rank tracking at the lowest possible cost | DataForSEO (Standard queue) |
 | You need Google SERP + general web scraping from one API | ScraperAPI |
 | You're an enterprise team where reliability > cost | Bright Data or Oxylabs |
